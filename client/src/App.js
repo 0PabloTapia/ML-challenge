@@ -1,5 +1,5 @@
 // import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import Profile from './pages/Profile';
 import { ChakraProvider } from '@chakra-ui/react';
 import { extendTheme } from '@chakra-ui/react';
@@ -25,6 +25,7 @@ function App() {
                <Route path="/Profile" element={<Profile />} />
                <Route path="/my_purchases" element={<Purchases />} />
                <Route path="/my_purchases/:id" element={<ItemDetails />} />
+               <Route path="*" element={<Navigate to="/Profile" replace />} />
             </Routes>
          </ChakraProvider>
       </>

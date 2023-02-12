@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardBody, Avatar, Text, Heading, Image, Spinner } from '@chakra-ui/react';
+import { Card, CardHeader, CardBody, Avatar, Text, Heading, Spinner } from '@chakra-ui/react';
 import { useFetch } from '../hooks/useFetch';
 
 const UserCard = () => {

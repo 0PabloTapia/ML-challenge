@@ -24,20 +24,20 @@ const Item = (props) => {
                   {cantidad} {cantidad > 1 ? 'unidades' : 'unidad'}
                </Text>
                <Link to={`/my_purchases/${idCompra}`}>
-               <Button
-                  style={{
-                     width: '160px',
-                     height: '32px',
-                     fontSize: '14px',
-                     fontWeight: '600',
-                     color: 'white',
-                     backgroundColor: '#3483FA',
-                     marginLeft: '62rem',
-                     margin: '-8rem 0 2rem 62rem'
-                  }}
-               >
-                  Ver Compra
-               </Button>
+                  <Button
+                     style={{
+                        width: '160px',
+                        height: '32px',
+                        fontSize: '14px',
+                        fontWeight: '600',
+                        color: 'white',
+                        backgroundColor: '#3483FA',
+                        marginLeft: '62rem',
+                        margin: '-8rem 0 2rem 62rem'
+                     }}
+                  >
+                     Ver Compra
+                  </Button>
                </Link>
             </CardBody>
          </Card>

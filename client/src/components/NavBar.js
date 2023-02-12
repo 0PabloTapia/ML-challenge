@@ -1,4 +1,4 @@
-import { Input, InputRightAddon, InputGroup, Text } from '@chakra-ui/react';
+import { Input, InputRightAddon, InputGroup } from '@chakra-ui/react';
 import { Link } from "react-router-dom";
 import { SearchIcon } from '@chakra-ui/icons';
 import mainLogo from '../img/mercado-libre-logo-6.png';
