@@ -45,9 +45,7 @@ const ItemDetails = () => {
                         Vendedor
                      </Heading>
                      <Divider />
-                     <CardBody>
-                       {loading ? spinner : <Text fontSize={14}>{vendedor?.nickname}</Text>} 
-                     </CardBody>
+                     <CardBody>{loading ? spinner : <Text fontSize={14}>{vendedor?.nickname}</Text>}</CardBody>
                   </Card>
                </SimpleGrid>
             </Box>
@@ -57,7 +55,7 @@ const ItemDetails = () => {
                      <TableCaption style={{ marginTop: '-8rem', marginLeft: '-8.7rem', fontSize: '14px', color: 'rgba(0,0,0,.55)' }}>
                         {fecha && parseDate(fecha)} | #{id_compra}
                      </TableCaption>
-                     <Thead >
+                     <Thead>
                         <Tr>
                            <Th>Detalle de la compra</Th>
                         </Tr>
@@ -65,7 +63,7 @@ const ItemDetails = () => {
                      {loading ? (
                         spinner
                      ) : (
-                        <Tbody> 
+                        <Tbody>
                            <Tr>
                               <Td fontSize="14px" color="rgba(0,0,0,.55)">
                                  Producto
